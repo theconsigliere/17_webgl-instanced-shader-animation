@@ -1,3 +1,8 @@
+vec4 transition = texture2D(uFBO, instanceUV);
+// extend or hide instance model
+// actual vertex position
+transformed *= transition.g;
+
 uniform float time;
 uniform float progress;
 uniform sampler2D texture1;
